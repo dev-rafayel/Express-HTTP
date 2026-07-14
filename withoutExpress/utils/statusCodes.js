@@ -23,7 +23,6 @@ const notFoundResponse = {
   },
 };
 
-
 const badRequestResponses = {
   resourceIDRequired: {
     status: 400,
@@ -33,6 +32,11 @@ const badRequestResponses = {
   titleAndAuthorRequired: {
     status: 400,
     message: JSON.stringify(`Title and author are required`),
+  },
+
+  bodyRequired: {
+    status: 400,
+    message: JSON.stringify(`Body is required`),
   },
 };
 
